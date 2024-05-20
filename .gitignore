@@ -28,6 +28,10 @@ hs_err_pid*
 replay_pid*
 
 ### VisualStudioCode ###
+
+### important to ignore vscode folders ###
+**/.vscode/
+
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
