@@ -1,9 +1,7 @@
 package desafio.dominio;
 
-public class Curso {
+public class Curso extends Conteudo {
 
-    private String titulo;
-    private String descricao;
     private int cargaHoraria;
 
     // getters setters
@@ -15,22 +13,13 @@ public class Curso {
         this.cargaHoraria = cargaHoraria;
     }
 
-    public String getDescricao() {
-        return descricao;
+    @Override
+    public double calcularXp() {
+        return XP_PADRAO + 80;
     }
 
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
-    }
-
-    public String getTitulo() {
-        return titulo;
-    }
-
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
-    }
-
+    // usar getter para atributos
+    // pq nao estao nesta class mas na que estende
     @Override
     public String toString() {
         return "Curso{" +
